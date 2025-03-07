@@ -49,3 +49,14 @@ buttons.forEach(button => {
 });
 
 
+function calculate(a, b, op) {
+  a = parseFloat(a);
+  b = parseFloat(b);
+  if (op === '+') return a + b;
+  if (op === '-') return a - b;
+  if (op === '*') return a * b;
+  if (op === '/') return a / b;
+  return 0;
+}
+
+
