@@ -4,3 +4,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    transition: background 0.5s ease;
+  }
+  
