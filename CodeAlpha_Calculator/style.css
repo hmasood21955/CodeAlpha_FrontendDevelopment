@@ -101,3 +101,27 @@
     color: #fff;
   }
   
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+  }
+  
+  .btn:hover {
+    background: #d0d0d0;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
