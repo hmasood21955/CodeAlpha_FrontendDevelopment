@@ -77,3 +77,11 @@
     transition: 0.4s;
   }
   
+  input:checked + .slider {
+    background: #45a247;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
