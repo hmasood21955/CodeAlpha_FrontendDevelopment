@@ -60,3 +60,6 @@ function calculate(a, b, op) {
 }
 
 
+themeToggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
+});
