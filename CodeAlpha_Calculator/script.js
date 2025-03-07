@@ -8,3 +8,8 @@ let firstOperand = '';
 let secondOperand = '';
 
 
+function updateDisplay(value) {
+  display.textContent = value;
+}
+
+
