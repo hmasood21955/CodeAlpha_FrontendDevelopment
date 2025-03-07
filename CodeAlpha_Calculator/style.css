@@ -125,3 +125,32 @@
     transform: scale(0.95);
   }
   
+  .operator {
+    background: #ff9a9e;
+    color: white;
+  }
+  
+  .operator:hover {
+    background: #ff7a7e;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
+  
+  .dark-mode .btn {
+    background: #444;
+    color: #fff;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #555;
+  }
+  
+  .dark-mode .operator {
+    background: #45a247;
+  }
+  
+  .dark-mode .operator:hover {
+    background: #358f37;
+  }
