@@ -13,3 +13,39 @@ function updateDisplay(value) {
 }
 
 
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const value = button.getAttribute('data-value');
+
+    if (value === 'C') {
+      currentInput = '';
+      firstOperand = '';
+      secondOperand = '';
+      operator = null;
+      updateDisplay('0');
+    } else if (value === 'DEL') {
+      currentInput = currentInput.slice(0, -1);
+      updateDisplay(currentInput || '0');
+    } else if (value === '=') {
+      if (operator && firstOperand && currentInput) {
+        secondOperand = currentInput;
+        const result = calculate(firstOperand, secondOperand, operator);
+        updateDisplay(result);
+        currentInput = result;
+        operator = null;
+        firstOperand = '';
+      }
+    } else if (['+', '-', '*', '/'].includes(value)) {
+      if (currentInput) {
+        firstOperand = currentInput;
+        operator = value;
+        currentInput = '';
+      }
+    } else {
+      currentInput += value;
+      updateDisplay(currentInput);
+    }
+  });
+});
+
+
