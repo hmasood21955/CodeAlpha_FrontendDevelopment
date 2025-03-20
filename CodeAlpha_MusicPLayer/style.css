@@ -23,3 +23,11 @@ body {
     margin-bottom: 20px;
   }
   
+  .progress-container {
+    margin: 20px 0;
+  }
+  
+  .progress-container input[type="range"] {
+    width: 100%;
+  }
+  
