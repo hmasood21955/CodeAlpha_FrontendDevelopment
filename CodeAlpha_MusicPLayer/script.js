@@ -58,3 +58,11 @@ function prevSong() {
   loadSong(currentSongIndex);
 }
 
+// Event listeners
+playPauseButton.addEventListener('click', togglePlayPause);
+prevButton.addEventListener('click', prevSong);
+nextButton.addEventListener('click', nextSong);
+audio.addEventListener('timeupdate', updateProgress);
+progress.addEventListener('input', setProgress);
+volume.addEventListener('input', setVolume);
+
