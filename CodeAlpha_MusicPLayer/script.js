@@ -22,3 +22,8 @@ function togglePlayPause() {
   }
 }
 
+// Function to update progress bar
+function updateProgress() {
+  progress.value = (audio.currentTime / audio.duration) * 100;
+}
+
