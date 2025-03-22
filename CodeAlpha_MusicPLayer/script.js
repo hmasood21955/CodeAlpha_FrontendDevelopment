@@ -32,3 +32,8 @@ function setProgress() {
   audio.currentTime = (progress.value * audio.duration) / 100;
 }
 
+// Function to change volume
+function setVolume() {
+  audio.volume = volume.value;
+}
+
