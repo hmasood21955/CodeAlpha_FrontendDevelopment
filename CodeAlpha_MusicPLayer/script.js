@@ -46,3 +46,9 @@ function loadSong(index) {
   playPauseButton.textContent = 'Pause';
 }
 
+// Function to play next song
+function nextSong() {
+  currentSongIndex = (currentSongIndex + 1) % songs.length;
+  loadSong(currentSongIndex);
+}
+
