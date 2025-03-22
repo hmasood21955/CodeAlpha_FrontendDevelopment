@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6C63FF;
+    --text-color: #2D3436;
+    --background: #F7F9FC;
+    --shadow: rgba(149, 157, 165, 0.2);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px var(--shadow);
+}
+
+.main-image-wrapper {
+    flex: 1;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.nav-btn {
+    background: var(--primary-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+.nav-btn i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all 0.2s ease;
+    border: 3px solid transparent;
+}
+
+.thumbnail:hover {
+    transform: translateY(-3px);
+}
+
+.thumbnail.active {
+    border-color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-container {
+        padding: 0.5rem;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+} 
