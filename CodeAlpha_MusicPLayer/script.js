@@ -27,3 +27,8 @@ function updateProgress() {
   progress.value = (audio.currentTime / audio.duration) * 100;
 }
 
+// Function to set progress
+function setProgress() {
+  audio.currentTime = (progress.value * audio.duration) / 100;
+}
+
