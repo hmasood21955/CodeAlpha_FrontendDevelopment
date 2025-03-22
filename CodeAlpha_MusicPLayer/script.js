@@ -37,3 +37,12 @@ function setVolume() {
   audio.volume = volume.value;
 }
 
+// Function to load a song
+function loadSong(index) {
+  const song = songs[index];
+  audio.src = song.getAttribute('data-src');
+  songTitle.textContent = song.textContent;
+  audio.play();
+  playPauseButton.textContent = 'Pause';
+}
+
