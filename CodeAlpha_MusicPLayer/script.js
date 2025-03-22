@@ -52,3 +52,9 @@ function nextSong() {
   loadSong(currentSongIndex);
 }
 
+// Function to play previous song
+function prevSong() {
+  currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+  loadSong(currentSongIndex);
+}
+
