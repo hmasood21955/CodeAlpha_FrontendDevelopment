@@ -66,3 +66,13 @@ audio.addEventListener('timeupdate', updateProgress);
 progress.addEventListener('input', setProgress);
 volume.addEventListener('input', setVolume);
 
+// Load the first song on page load
+loadSong(currentSongIndex);
+
+// Add click event to playlist items
+songs.forEach((song, index) => {
+  song.addEventListener('click', () => {
+    currentSongIndex = index;
+    loadSong(currentSongIndex);
+  });
+});
