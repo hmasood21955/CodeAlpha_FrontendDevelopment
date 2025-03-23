@@ -7,7 +7,6 @@ A collection of three web development projects created during my CodeAlpha inter
 ### 1. Calculator
 A modern calculator web application for basic arithmetic operations.
 
-![Calculator Preview](screenshots/calculator.png)
 
 **Features:**
 - Basic arithmetic operations
@@ -23,7 +22,6 @@ A modern calculator web application for basic arithmetic operations.
 ### 2. Image Gallery
 An interactive image gallery with smooth transitions.
 
-![Gallery Preview](screenshots/gallery.png)
 
 **Features:**
 - Responsive image display
@@ -39,7 +37,6 @@ An interactive image gallery with smooth transitions.
 ### 3. Music Player
 A sleek audio player with essential playback controls.
 
-![Music Player Preview](screenshots/music-player.png)
 
 **Features:**
 - Play/Pause functionality
